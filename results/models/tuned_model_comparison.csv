@@ -1,0 +1,3 @@
+model,baseline_accuracy,tuned_accuracy,baseline_macro_f1,tuned_macro_f1,baseline_seizure_recall,tuned_seizure_recall,best_params,search_time_sec
+Random Forest,0.8,0.8043,0.799,0.8029,0.9935,0.9913,"{'n_estimators': 300, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_depth': 20}",69.7
+LightGBM,0.807,0.8091,0.807,0.8087,0.989,0.9913,"{'num_leaves': 31, 'n_estimators': 150, 'max_depth': 10, 'learning_rate': 0.05}",20.0
