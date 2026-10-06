@@ -1,0 +1,6 @@
+"feature","F_statistic","p_value","eta_squared"
+"sample_entropy",2896.6,0,0.502
+"variance",2386.4,0,0.4537
+"permutation_entropy",2133.8,0,0.4261
+"beta_power",867.7,0,0.2319
+"spectral_entropy",338,1.52e-275,0.1053
