@@ -1,0 +1,10 @@
+"model","accuracy","macro_f1","seizure_recall","train_time_sec"
+"Random Forest",0.7909,0.7907,0.9696,12.8
+"Gradient Boosting",0.7761,0.7753,0.9717,5.6
+"Neural Net (MLP)",0.7552,0.7541,0.9609,3
+"SVM (Radial)",0.7365,0.736,0.9652,5.5
+"SVM (Linear)",0.7278,0.7287,0.9391,3.4
+"Multinomial Logistic",0.7265,0.7266,0.9348,1.1
+"k-NN",0.7043,0.7037,0.9283,0.1
+"Decision Tree",0.677,0.6483,0.963,0.2
+"Naive Bayes",0.6057,0.586,0.6022,0.7

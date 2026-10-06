@@ -1,0 +1,12 @@
+model,accuracy,macro_f1,seizure_recall,train_time_sec
+LightGBM,0.807,0.8065,0.9891,0.94
+Extra Trees,0.807,0.8051,0.9891,3.52
+Random Forest,0.8,0.7988,0.9935,7.86
+Gradient Boosting,0.7935,0.792,0.9848,22.17
+MLP,0.7613,0.7614,0.9717,7.81
+SVM (RBF),0.733,0.731,0.9739,5.15
+Logistic Regression,0.7126,0.7126,0.9478,0.14
+k-NN,0.7126,0.7109,0.9565,0.1
+Decision Tree,0.7057,0.7043,0.9739,0.15
+AdaBoost,0.6774,0.6677,0.9913,3.19
+Naive Bayes,0.6435,0.622,0.8022,0.01
