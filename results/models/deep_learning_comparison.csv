@@ -1,0 +1,5 @@
+model,accuracy,macro_f1,seizure_recall,train_time_sec,params
+1D CNN,0.7096,0.7006,0.9696,18.8,191109
+LSTM,0.4735,0.4308,0.9674,42.3,5573
+BiLSTM,0.6587,0.6471,0.9543,83.9,10949
+CNN-LSTM hybrid,0.7152,0.7021,0.9848,38.7,24133
