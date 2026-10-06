@@ -59,19 +59,21 @@ R and Python use different random-number generators, so their splits are not
 row-identical; the numbers are comparable in kind, not row for row.
 
 **Statistics (R, no model involved):** only 1 of 25 feature × class combinations
-passes Shapiro-Wilk, which motivates tree-based models. One-way ANOVA effect
-sizes (η²) for the five analyzed features: sample entropy 0.50, variance 0.45,
-permutation entropy 0.43, beta power 0.23, **spectral entropy 0.11**. Time-domain
-entropy separates the five classes roughly 4-5x better than spectral entropy.
-The same conclusion appears independently in Python SHAP (sample entropy 3rd of
-19 features, spectral entropy last) and in R Random Forest importance.
+passes Shapiro-Wilk, which motivates tree-based models. One-way ANOVA effect sizes
+(η²) over all 23 features: sample entropy 0.50 (rank 5), variance 0.45,
+permutation entropy 0.43, **spectral entropy 0.11 (rank 20)**. Tukey HSD with
+Cohen's d shows seizure differs from eyes-open / eyes-closed by |d| = 2.8 / 2.3
+on sample entropy but only 0.12 / 0.19 on spectral entropy. The same picture
+appears independently in Python SHAP (sample entropy 3rd of 19 features,
+spectral entropy last) and in R Random Forest importance.
 
 ## Limitations
 - Deep-learning models ran on a single CPU core with capped epochs and small
   architectures; they should not be read as a general verdict on deep learning.
 - Tumor-region vs healthy-region and eyes-open vs eyes-closed remain the main
   confusions for every model.
-- The ANOVA covers five features chosen for the entropy comparison, not all 23.
+- The top-ranked ANOVA features are four magnitude features that were pruned as redundant
+  with `variance`; comparisons against `variance` are sensitive to its skewness (see `R/README.md`).
 
 ## Repository note
 The commit history groups the completed work into its logical stages; later work
